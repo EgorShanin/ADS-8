@@ -31,11 +31,10 @@ int Train::getLength() {
         while (true) {
             countOp++;
             len++;
-            temp = temp->next;
+            temp = temp->prev;
             if (temp->light) {
                 temp->light = false;
                 while (i < len) {
-                    temp = temp->prev;
                     countOp++;
                     i++;
                 }
