@@ -1,7 +1,7 @@
 // Copyright 2021 NNTU-CS
 #include "train.h"
 
-Train::Train(): countOp(0), first(nullptr){}
+Train::Train(): countOp(0), first(nullptr) {}
 
 void Train::addCage(bool light) {
         Cage *cage = new Cage;
@@ -24,7 +24,7 @@ void Train::addCage(bool light) {
     }
 
 int Train::getLength() {
-        int len = 0 ;
+        int len = 0;
         int i = 0;
         first->light = true;
         Cage *temp = first;
